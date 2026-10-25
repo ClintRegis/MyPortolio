@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clint Jobelle Regis — student developer portfolio">
+  <meta name="theme-color" content="#0b0d12">
+  <title>Clint Regis | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="Clint Regis home">CR<span>.</span></a>
+
+      <div class="profile">
+        <div class="avatar-frame">
+          <img src="image/whit.jpg"
+               alt="Portrait of Clint Regis"
+               class="avatar"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <span class="avatar-fallback" aria-hidden="true">CR</span>
+        </div>
+        <h2>Clint Regis</h2>
+        <p>IT Student · Aspiring Developer</p>
+      </div>
+
+      <p class="nav-label">MENU</p>
+      <nav class="navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="#home"><span class="nav-icon">⌂</span>Overview</a>
+        <a class="nav-link" href="#about"><span class="nav-icon">◉</span>About me</a>
+        <a class="nav-link" href="#skills"><span class="nav-icon">✳</span>Skills</a>
+        <a class="nav-link" href="#projects"><span class="nav-icon">▧</span>Projects</a>
+        <a class="nav-link" href="#education"><span class="nav-icon">▤</span>Education</a>
+        <a class="nav-link" href="#contact"><span class="nav-icon">↗</span>Contact</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span>
+        Open to learning & collaboration
+        <small>© 2026 Clint Regis</small>
+      </div>
+    </aside>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <section class="hero section-anchor" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> PERSONAL PORTFOLIO / 2026</div>
+          <p class="hello">Hey there, I'm</p>
+          <h1>Clint Jobelle<br><span>Regis.</span></h1>
+          <h2>Student <span class="accent-text">Developer</span></h2>
+          <p class="hero-description">
+            I’m an Information Technology student exploring web development,
+            software, and practical technology solutions. This is where I share
+            what I’m learning and the projects I’m building along the way.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">Explore my work <span>↗</span></a>
+            <a href="#contact" class="button button-ghost">Get in touch</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>04</strong><span>Technologies</span></div>
+            <div><strong>02+</strong><span>Project areas</span></div>
+            <div><strong>∞</strong><span>Curiosity</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Developer illustration">
+          <div class="art-glow"></div>
+          <div class="art-grid"></div>
+          <div class="code-window">
+            <div class="window-top"><span></span><span></span><span></span><small>joross.dev</small></div>
+            <div class="code-lines" aria-hidden="true">
+              <p><span class="code-purple">const</span> developer = {</p>
+              <p class="indent"><span class="code-blue">name</span>: <span class="code-green">'Clint'</span>,</p>
+              <p class="indent"><span class="code-blue">focus</span>: <span class="code-green">'Web Dev'</span>,</p>
+              <p class="indent"><span class="code-blue">learning</span>: <span class="code-green">true</span>,</p>
+              <p>};</p>
+              <p class="code-comment">// building one project at a time</p>
+              <p><span class="code-purple">while</span> (learning) {</p>
+              <p class="indent">keepBuilding(); <span class="cursor">|</span></p>
+              <p>}</p>
+            </div>
+          </div>
+          <div class="floating-chip chip-one"><span class="chip-mark orange-mark">&lt;/&gt;</span> Web Development</div>
+          <div class="floating-chip chip-two"><span class="chip-mark green-mark">✦</span> Always learning</div>
+          <div class="art-caption"><span class="status-dot"></span> Turning ideas into projects</div>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="content-section section-anchor" id="about">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / INTRODUCTION</p><h2>A little <span>about me.</span></h2></div>
+          <p class="section-subtitle">The person behind the code.</p>
+        </div>
+        <div class="about-layout">
+          <div class="about-mark">“</div>
+          <div class="about-content">
+            <h3>Curious by nature. <span>Building through practice.</span></h3>
+            <p>
+              I’m a dedicated IT student who enjoys exploring new ideas, learning
+              technologies, and developing practical skills. Through coursework
+              and hands-on projects, I’m working to strengthen my technical
+              abilities, creativity, and teamwork. My goal is to keep improving
+              and use technology to help solve real-world problems.
+            </p>
+            <div class="detail-grid">
+              <div class="detail-item"><span>FULL NAME</span><strong>Clint Jobelle Regis</strong></div>
+              <div class="detail-item"><span>COURSE</span><strong>Bachelor of Science in Information Technology</strong></div>
+              <div class="detail-item"><span>INTERESTS</span><strong>Web development, technology & design</strong></div>
+              <div class="detail-item"><span>CURRENT FOCUS</span><strong>Learning by building</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="skills">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / TOOLKIT</p><h2>Skills I'm <span>growing.</span></h2></div>
+          <p class="section-subtitle">A work in progress, by design.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-card-top"><span class="skill-symbol orange">&lt;/&gt;</span><span class="skill-number">01</span></div>
+            <h3>HTML</h3><p>Structuring accessible, organized web pages.</p>
+            <div class="skill-track"><span style="--level:75%"></span></div><div class="skill-foot"><span>Learning progress</span><span>75%</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-top"><span class="skill-symbol blue">✧</span><span class="skill-number">02</span></div>
+            <h3>CSS</h3><p>Styling layouts and responsive interfaces.</p>
+            <div class="skill-track"><span style="--level:65%"></span></div><div class="skill-foot"><span>Learning progress</span><span>65%</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-top"><span class="skill-symbol yellow">JS</span><span class="skill-number">03</span></div>
+            <h3>JavaScript</h3><p>Adding behavior and interaction to websites.</p>
+            <div class="skill-track"><span style="--level:45%"></span></div><div class="skill-foot"><span>Learning progress</span><span>45%</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-card-top"><span class="skill-symbol green">Dj</span><span class="skill-number">04</span></div>
+            <h3>Django</h3><p>Exploring Python-based web apps and backend development.</p>
+            <div class="skill-track"><span style="--level:50%"></span></div><div class="skill-foot"><span>Learning progress</span><span>50%</span></div>
+          </article>
+            <article class="skill-card">
+            <div class="skill-card-top"><span class="skill-symbol green">Dj</span><span class="skill-number">05</span></div>
+            <h3>GB Studio</h3><p>Beginner in creating 2D games, learning game mechanics, level design, character interactions, and event-based game logic using GB Studio.</p>
+            <div class="skill-track"><span style="--level:55%"></span></div><div class="skill-foot"><span>Learning progress</span><span>55%</span></div>
+          </article>
+        </div>
+        <p class="small-note">Skill percentages are self-estimates. Update them to reflect your current experience.</p>
+      </section>
+
+      <section class="content-section section-anchor" id="projects">
+        <div class="section-heading">
+          <div><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I've <span>worked on.</span></h2></div>
+          <p class="section-subtitle">Learning happens by doing.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-art portfolio-art">
+              <div class="mini-browser"><div class="mini-browser-top"><i></i><i></i><i></i></div><div class="mini-layout"><span></span><div><b></b><b></b><b></b></div></div></div>
+              <span class="project-index">PROJECT 01</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">WEB DEVELOPMENT</div>
+              <h3>Personal Portfolio Website</h3>
+              <p>A responsive portfolio designed to present my background, skills, education, and selected academic work.</p>
+              <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-art systems-art">
+              <div class="system-node node-a">DEVICE</div><div class="system-line line-a"></div>
+              <div class="system-node node-b">SYSTEM</div><div class="system-line line-b"></div>
+              <div class="system-node node-c">DATA</div>
+              <span class="project-index">PROJECT 02</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">ACADEMIC & TECHNICAL WORK</div>
+              <h3>IT Labs & IoT Capstone</h3>
+              <p>Hands-on work involving Barangay Cleaning Service System, bootable USB creation, AD DS and DNS setup, and an IoT-based poultry feeding capstone.</p>
+              <div class="tech-list"><span>Networking</span><span>Windows Server</span><span>IoT</span></div>
+            </div>
+          </article>
+                    <article class="project-card">
+            <div class="project-art portfolio-art">
+              <div class="game-development">
+  <div class="game-screen">
+    <div class="game-sky"></div>
+    <div class="game-ground"></div>
+    <div class="game-player"></div>
+    <div class="game-platform"></div>
+  </div>
+</div>
+              <span class="project-index">PROJECT 03</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">Game DEVELOPMENT</div>
+              <h3>CampustQuest</h3>
+              <p>Designed and developed interactive games using game development tools, focusing on gameplay mechanics, level design, user interaction, and overall player experience. Applied creativity and programming skills to build engaging and functional game projects.</p>
+              <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GB Studio</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="education">
+        <div class="section-heading">
+          <div><p class="eyebrow">04 / BACKGROUND</p><h2>My learning <span>journey.</span></h2></div>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card"><div class="timeline-top"><span>COLLEGE</span><span class="current-label">CURRENT</span></div><h3>Cebu Eastern College</h3><p class="timeline-course">Bachelor of Science in Information Technology</p><p>Developing IT knowledge through coursework, technical labs, teamwork, and project-based learning.</p></div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card"><div class="timeline-top"><span>SENIOR HIGH SCHOOL</span><span>PREVIOUS</span></div><h3>Asian College of Technology</h3><p class="timeline-course">Grades 11–12</p><p>Building the academic foundation for my current studies and continued growth.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section section-anchor" id="contact">
+        <div class="contact-orb"></div>
+        <p class="eyebrow">05 / SAY HELLO</p>
+        <h2>Have an idea?<br><span>Let's connect.</span></h2>
+        <p class="contact-copy">For academic collaboration, questions, or project discussions, feel free to send me an email.</p>
+        <a class="button button-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=clintregis14@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer">Email me <span>↗</span></a>
+        <p class="email-line"><a href="mailto:clintregis14@gmail.com">clintregis14@gmail.com</a></p>
+      </section>
+
+      <footer class="site-footer">
+        <a class="footer-brand" href="#home">JR<span>.</span></a>
+        <p>Designed & built by Clint Regis.</p>
+        <a href="#home" class="back-top">Back to top ↑</a>
+        <small>© 2026 All rights reserved.</small>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
